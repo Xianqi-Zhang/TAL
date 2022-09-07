@@ -5,6 +5,7 @@ This project is a PyTorch implementation of the paper "A Memory-Related Multi-Ta
 
 ## 
 | Ground Truth | Model Output | Visualization |
+|:------------:|:------------:|:-------------:|
 | [{'name': 'pushTo', 'args': ['orange', 'box']}, {'name': 'pick', 'args': ['chair']}, {'name': 'drop', 'args': ['chair']}, {'name': 'pickNplaceAonB', 'args': ['sponge', 'table']}] | [{'name': 'pushTo', 'args': ['orange', 'box']}, {'name': 'pickNplaceAonB', 'args': ['sponge', 'table']}])  | ![](docs/assets/1.gif) |
 | [{'name': 'pushTo', 'args': ['orange', 'paper']}, {'name': 'pickNplaceAonB', 'args': ['book', 'cube_green']}, {'name': 'pushTo', 'args': ['chair', 'stool']}] | [{'name': 'pushTo', 'args': ['orange', 'paper']}, {'name': 'pickNplaceAonB', 'args': ['book', 'stool']}, {'name': 'pickNplaceAonB', 'args': ['book', 'stool']}, {'name': 'pickNplaceAonB', 'args': ['book', 'cube_green']}, {'name': 'pushTo', 'args': ['chair', 'stool']}])) | ![](docs/assets/2.gif) |
 | [{'name': 'pickNplaceAonB', 'args': ['bottle_blue', 'table']}, {'name': 'pushTo', 'args': ['tray2', 'mop']}, {'name': 'moveTo', 'args': ['cube_red']}] | [{'name': 'pickNplaceAonB', 'args': ['bottle_blue', 'table']}, {'name': 'pushTo', 'args': ['tray2', 'mop']}]) | ![](docs/assets/3.gif) |
@@ -16,6 +17,8 @@ This project is a PyTorch implementation of the paper "A Memory-Related Multi-Ta
 Code will be publicly released after paper review period.
 
 
+
+![](docs/assets/5.gif)
 
 
 
