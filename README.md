@@ -16,6 +16,7 @@ This project is a PyTorch implementation of the paper "A Memory-Related Multi-Ta
 ## Running Code
 Code will be publicly released after paper review period.
 
+![](https://github.com/Xianqi-Zhang/M3/tree/main/docs/assets/5.gif)
 
 
 
