@@ -10,4 +10,4 @@ Related code coming soon.
 * This implementation based on the following repo
 * tango: https://github.com/reail-iitd/tango/wiki/Training-your-own-models
 * CQL: https://github.com/BY571/CQL
-
+* min-decision-transformer: https://github.com/nikhilbarhate99/min-decision-transformer
