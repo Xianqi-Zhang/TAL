@@ -1,6 +1,6 @@
 # M3
 
-This repository contains code implementation of the paper "A Memory-Related Multi-Task Method Based on Task-Agnostic Exploration".
+This project is a PyTorch implementation of the paper "A Memory-Related Multi-Task Method Based on Task-Agnostic Exploration".
 
 Related code coming soon.
 
