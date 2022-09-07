@@ -7,7 +7,7 @@ This project is a PyTorch implementation of the paper "A Memory-Related Multi-Ta
 
 
 ## Running Code
-Related code coming soon.
+Code will be publicly released after paper review period.
 
 
 
