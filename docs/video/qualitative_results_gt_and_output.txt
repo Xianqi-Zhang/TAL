@@ -22,7 +22,7 @@ Pred:
 ----------------------------------------
 
 ----------------------------------------
-4 [chair is neer the table, book on the table]
+4 [chair is near the table, book on the table]
 GT: 
 [{'name': 'pickNplaceAonB', 'args': ['apple', 'couch']}, {'name': 'pushTo', 'args': ['cube_gray', 'tray']}, {'name': 'pushTo', 'args': ['chair', 'book']}, {'name': 'moveTo', 'args': ['bottle_red']}, {'name': 'pickNplaceAonB', 'args': ['orange', 'chair']}]
 Pred:
