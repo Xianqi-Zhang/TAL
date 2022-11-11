@@ -1,8 +1,8 @@
-# Task-Agnostic Learning to Accomplish New Tasks [Under Review]
-
-under revision
+# Task-Agnostic Learning to Accomplish New Tasks 
+[Under Review]
 
 ## Introduction
+...
 
 <!--
 - This project is a **PyTorch** implementation of the paper <a href="https://arxiv.org/abs/2209.04100" target="_blank">Task-Agnostic Learning to Accomplish New Tasks</a>.
