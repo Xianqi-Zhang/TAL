@@ -24,6 +24,6 @@
 ## References
 
 This implementation based on the following repo:
-- tango: https://github.com/reail-iitd/tango/wiki/Training-your-own-models
+- tango: https://github.com/reail-iitd/tango
 - CQL: https://github.com/BY571/CQL
 - min-decision-transformer: https://github.com/nikhilbarhate99/min-decision-transformer
