@@ -1,0 +1,272 @@
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description"
+            content="Task-Agnostic Learning to Accomplish New Tasks">
+        <meta name="author"
+            content="Xianqi Zhang, Xingtao Wang, Xu Liu, Wenrui Wang, Xiaopeng Fan*, Debin Zhao">
+        <title>Task-Agnostic Learning to Accomplish New Tasks</title>
+
+        <!-- Bootstrap core CSS -->
+        <!--link href="bootstrap.min.css" rel="stylesheet"-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Custom styles for this template -->
+        <link href="assets/offcanvas.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <!-- Font Awesome CSS -->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+        <!-- Animate css -->
+        <link href="assets/css/animate.css" rel="stylesheet">
+        <!-- Magnific css -->
+        <link href="assets/css/magnific-popup.css" rel="stylesheet">
+        <!-- Responsive CSS -->
+        <link href="assets/css/responsive.css" rel="stylesheet">
+        <link rel="shortcut icon" href="assets/images/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/images/ico/apple-touch-icon-57-precomposed.png">
+
+        <nav class="navbar navbar-custom" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse" id="custom-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">Code [After Review]</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">Paper</a></li>
+                    </ul>
+                </div>
+            </div><!-- .container -->
+        </nav>
+    </head>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container"></div>
+        <h1 style="text-align: center; margin-bottom: 5px;"><font color="000000">Task-Agnostic Learning to Accomplish New Tasks</font></h1>
+        <h3 style="text-align: center; margin-bottom: 5px;"><font color="4e79a7">[Under Review]</font></h3>
+        <hr>
+        <p class="authors">
+            Xianqi Zhang,
+            Xingtao Wang,
+            Xu Liu,
+            Wenrui Wang,
+            <a href="https://scholar.google.com/citations?user=4LsZhDgAAAAJ&hl=zh-CN&oi=ao">Xiaopeng Fan*, <i>Senior Member, IEEE</i></a>,
+            <a href="https://scholar.google.com/citations?user=QXyj0hkAAAAJ&hl=zh-CN">Debin Zhao, <i>Member, IEEE</i></a>
+        </p>
+        <h4 style="text-align: center; margin-bottom: 10px;"><font color="4e79a7">The Research Center of Intelligent
+		Interface and Human Computer Interaction</font></h4>
+        <h4 style="text-align: center; margin-bottom: 0px;"><font color="4e79a7">Harbin Institute of Technology</font></h4>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <div class="col justify-content-center text-center">
+                <div class="col-sm-12">
+                    <img src="images/paper/Cartoon.png" style="width:100%">
+                </div>
+            </div>
+
+            <hr style="margin-top: 5px;">
+            <h3><font color="4e79a7">Abstract</font></h3>
+            <p align="justify">
+            <font color="grey">
+                <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+                Reinforcement Learning (RL) and Imitation Learning (IL) have made great progress in robotic control 
+                in recent years. However, these methods show obvious deterioration for new tasks that need to be 
+                completed through new combinations of actions. RL methods heavily rely on reward functions that 
+                cannot generalize well for new tasks, while IL methods are limited by expert demonstrations which 
+                do not cover new tasks. In contrast, humans can easily complete these tasks with the fragmented 
+                knowledge learned from task-agnostic experience. Inspired by this observation, this paper proposes 
+                a task-agnostic learning method (TAL for short) that can learn fragmented knowledge from 
+                task-agnostic data to accomplish new tasks. TAL consists of four stages. First, the task-agnostic 
+                exploration is performed to collect data from the interactions with environment. The collected data 
+                is organized via a knowledge graph. Compared with the previous sequential structure, the knowledge 
+                graph representation is more compact and fits better for environment exploration. Second, an action 
+                feature extractor is proposed and trained using the collected knowledge graph data for task-agnostic 
+                fragmented knowledge learning. Third, a candidate action generator is designed, which applies the 
+                action feature extractor on a new task to generate multiple candidate action sets. Finally, an 
+                action proposal is designed to produce the probabilities for actions in a new task according to 
+                the environmental information. The probabilities are then used to select actions to be executed 
+                from multiple candidate action sets to form the plan. Experiments on a virtual indoor scene show 
+                that the proposed method outperforms the state-of-the-art offline RL method: CQL by 35.28% and the 
+                IL method (i.e. BC) by 22.22%.
+            </font>
+            </p>
+        </div>
+        <br>
+        <div class="section">
+            <h3 style="text-align:left;"><font color="4e79a7">Framework Overview</font></h3>
+            <hr>
+            <div class="col justify-content-center text-center">
+                <div class="col-sm-12">
+                    <img src="images/paper/pipeline.png" style="width:100%">
+                </div>
+            </div>
+            <p align="justify">
+            <font color="grey">
+                The framework of TAL. 
+                Stage 1: the task-agnostic exploration is performed to collect data and the data is organized 
+                via a knowledge graph. 
+                Stage 2: an action feature extractor is trained using the collected knowledge graph data. 
+                Stage 3: a candidate action generator produces multiple candidate action sets by decomposing 
+                the task feature using the learned fragmented knowledge. 
+                Stage 4: an action proposal is designed to produce the probabilities for plan generation.
+            </font>
+            </p>
+        </div>
+        <br>
+        <div class="section">
+            <h3 style="text-align:left;"><font color="4e79a7">Visualization</font></h3>
+            <hr>
+            <div class="row justify-content-center text-center">
+                <div class="col-sm-4">
+                    <img src="images/paper/demo_1.gif" style="width:100%">
+                    <h4>Ground Truth</h4>
+                    <h6>
+                        {'name': 'pushTo', 'args': ['orange', 'box']},<br>
+                        {'name': 'pick', 'args': ['chair']},<br>
+                        {'name': 'drop', 'args': ['chair']},<br>
+                        {'name': 'pickNplaceAonB', 'args': ['sponge', 'table']}
+                    </h6>
+                    <h4>Output</h4>
+                    <h6>
+                        {'name': 'pushTo', 'args': ['orange', 'box']},<br>
+                        {'name': 'pickNplaceAonB', 'args': ['sponge', 'table']}
+                    </h6>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/paper/demo_2.gif" style="width:100%">
+                    <h4>Ground Truth</h4>
+                    <h6>
+                        {'name': 'pushTo', 'args': ['orange', 'paper']},<br>
+                        {'name': 'pickNplaceAonB', 'args': ['book', 'cube_green']},<br> 
+                        {'name': 'pushTo', 'args': ['chair', 'stool']}
+                    </h6>
+                    <h4>Output</h4>
+                    <h6>
+                        {'name': 'pushTo', 'args': ['orange', 'paper']},<br>
+                        {'name': 'pickNplaceAonB', 'args': ['book', 'stool']},<br>
+                        {'name': 'pickNplaceAonB', 'args': ['book', 'stool']},<br>
+                        {'name': 'pickNplaceAonB', 'args': ['book', 'cube_green']},<br>
+                        {'name': 'pushTo', 'args': ['chair', 'stool']}
+                    </h6>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/paper/demo_3.gif" style="width:100%">
+                    <h4>Ground Truth</h4>
+                    <h6>
+                        {'name': 'pickNplaceAonB', 'args': ['bottle_blue', 'table']},<br>
+                        {'name': 'pushTo', 'args': ['tray2', 'mop']},<br>
+                        {'name': 'moveTo', 'args': ['cube_red']}
+                    </h6>
+                    <h4>Output</h4>
+                    <h6>
+                        {'name': 'pickNplaceAonB', 'args': ['bottle_blue', 'table']},<br>
+                        {'name': 'pushTo', 'args': ['tray2', 'mop']}
+                    </h6>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/paper/demo_4.gif" style="width:100%">
+                    <h4>Ground Truth</h4>
+                    <font color="blue">*the chair is near the table and the book is on the table</font>
+                    <h6>
+                        {'name': 'pickNplaceAonB', 'args': ['apple', 'couch']},<br>
+                        {'name': 'pushTo', 'args': ['cube_gray', 'tray']},<br>
+                        {'name': 'pushTo', 'args': ['chair', 'book']},<br>
+                        {'name': 'moveTo', 'args': ['bottle_red']},<br>
+                        {'name': 'pickNplaceAonB', 'args': ['orange', 'chair']}
+                    </h6>
+                    <h4>Output</h4>
+                    <h6>
+                        {'name': 'pickNplaceAonB', 'args': ['apple', 'couch']},<br>
+                        {'name': 'pickNplaceAonB', 'args': ['cube_gray', 'tray']},<br>
+                        {'name': 'pushTo', 'args': ['cube_gray', 'cube_green']},<br>
+                        {'name': 'pickNplaceAonB', 'args': ['orange', 'chair']}
+                    </h6>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/paper/demo_5.gif" style="width:100%">
+                    <h4>Ground Truth</h4>
+                    <h6>
+                        {'name': 'pushTo', 'args': ['cube_red', 'orange']},<br>
+                        {'name': 'pushTo', 'args': ['orange', 'couch']},<br>
+                        {'name': 'pushTo', 'args': ['mop', 'cupboard']}
+                    </h6>
+                    <h4>Output</h4>
+                    <h6>
+                        {'name': 'pushTo', 'args': ['mop', 'cupboard']},<br>
+                        {'name': 'pickNplaceAonB', 'args': ['orange', 'couch']}
+                    </h6>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="images/paper/demo_6.gif" style="width:100%">
+                    <h4>Ground Truth</h4>
+                    <font color="blue">*the paper is on the table2</font>
+                    <h6>
+                        {'name': 'pushTo', 'args': ['tray2', 'orange']},<br>
+                        {'name': 'pushTo', 'args': ['chair', 'paper']},<br>
+                        {'name': 'pick', 'args': ['glue']},<br>
+                        {'name': 'drop', 'args': ['glue']}
+                    </h6>
+                    <h4>Output</h4>
+                    <h6>
+                        {'name': 'pushTo', 'args': ['tray2', 'orange']},<br>
+                        {'name': 'pushTo', 'args': ['bottle_gray', 'paper']},<br>
+                        {'name': 'pushTo', 'args': ['chair', 'table2']}
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="section">
+            <h3 style="text-align:left;"><font color="4e79a7">Contact</font></h3>
+            <p>
+                If you have any questions, please feel free to contact <font color="4e79a7">Xianqi Zhang</font> [zhangxianqi@stu.hit.edu.cn].
+            </p>
+        </div>
+        <div class="section">
+            <h3 style="text-align:left;"><font color="4e79a7">Bibtex</font></h3>
+            <hr>
+            <div class="bibtexsection">
+                To Do
+            </div>
+            <div class="col justify-content-center text-center">
+                <div class="col-sm-12">
+                    <img src="images/paper/paper_doc_img.png" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <hr>
+    </dev>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+</html>
