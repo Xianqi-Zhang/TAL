@@ -88,25 +88,21 @@
             <p align="justify">
             <font color="grey">
                 <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
-                Reinforcement Learning (RL) and Imitation Learning (IL) have made great progress in robotic control 
-                in recent years. However, these methods show obvious deterioration for new tasks that need to be 
-                completed through new combinations of actions. RL methods heavily rely on reward functions that 
-                cannot generalize well for new tasks, while IL methods are limited by expert demonstrations which 
-                do not cover new tasks. In contrast, humans can easily complete these tasks with the fragmented 
-                knowledge learned from task-agnostic experience. Inspired by this observation, this paper proposes 
-                a task-agnostic learning method (TAL for short) that can learn fragmented knowledge from 
-                task-agnostic data to accomplish new tasks. TAL consists of four stages. First, the task-agnostic 
-                exploration is performed to collect data from the interactions with environment. The collected data 
-                is organized via a knowledge graph. Compared with the previous sequential structure, the knowledge 
-                graph representation is more compact and fits better for environment exploration. Second, an action 
-                feature extractor is proposed and trained using the collected knowledge graph data for task-agnostic 
-                fragmented knowledge learning. Third, a candidate action generator is designed, which applies the 
-                action feature extractor on a new task to generate multiple candidate action sets. Finally, an 
-                action proposal is designed to produce the probabilities for actions in a new task according to 
-                the environmental information. The probabilities are then used to select actions to be executed 
-                from multiple candidate action sets to form the plan. Experiments on a virtual indoor scene show 
-                that the proposed method outperforms the state-of-the-art offline RL method: CQL by 35.28% and the 
-                IL method (i.e. BC) by 22.22%.
+		Reinforcement Learning (RL) and Imitation Learning (IL) have made great progress in robotic control in recent
+		years. However, these methods show obvious deterioration for new tasks that need to be completed through new combinations
+		of actions. RL methods heavily rely on reward functions that cannot generalize well for new tasks, while IL methods are
+		limited by expert demonstrations which do not cover new tasks. In contrast, humans can easily complete these tasks with the
+		fragmented knowledge learned from task-agnostic experience. Inspired by this observation, this paper proposes a task-agnostic
+		learning method (TAL for short) that can learn fragmented knowledge from task-agnostic data to accomplish new tasks.
+		TAL consists of four stages. First, the task-agnostic exploration is performed to collect data from interactions with the environment. 
+		The collected data is organized via a knowledge graph. Compared with the previous sequential structure, the
+		knowledge graph representation is more compact and fits better for environment exploration. Second, an action feature extractor
+		is proposed and trained using the collected knowledge graph data for task-agnostic fragmented knowledge learning. Third, a
+		candidate action generator is designed, which applies the action feature extractor on a new task to generate multiple candidate
+		action sets. Finally, an action proposal is designed to produce the probabilities for actions in a new task according to the
+		environmental information. The probabilities are then used to select actions to be executed from multiple candidate action sets
+		to form the plan. Experiments on a virtual indoor scene show that the proposed method outperforms the state-of-the-art offline
+		RL method: CQL by 35.28% and the IL method (i.e. BC) by 22.22%.
             </font>
             </p>
         </div>
