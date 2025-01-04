@@ -10,22 +10,19 @@
 -->
 
 
-## Abstract
-
+## Code
 ...
 
-## Running Code
-...
 
 ## Citation
-
 ...
+
 
 ## References
 
 This implementation based on the following repo:
-- tango: https://github.com/reail-iitd/tango
+- Tango: https://github.com/reail-iitd/tango
 - CQL: https://github.com/BY571/CQL
-- https://github.com/nicklashansen/tdmpc2
-- https://github.com/NJU-RL/Meta-DT
-- min-decision-transformer: https://github.com/nikhilbarhate99/min-decision-transformer
+- Decision-Transformer: https://github.com/nikhilbarhate99/min-decision-transformer
+- TD-MPC2: https://github.com/nicklashansen/tdmpc2
+- Meta-DT: https://github.com/NJU-RL/Meta-DT
