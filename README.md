@@ -23,6 +23,6 @@
 This implementation based on the following repo:
 - Tango: https://github.com/reail-iitd/tango
 - CQL: https://github.com/BY571/CQL
-- Decision-Transformer: https://github.com/nikhilbarhate99/min-decision-transformer
+- DT: https://github.com/nikhilbarhate99/min-decision-transformer
 - TD-MPC2: https://github.com/nicklashansen/tdmpc2
 - Meta-DT: https://github.com/NJU-RL/Meta-DT
